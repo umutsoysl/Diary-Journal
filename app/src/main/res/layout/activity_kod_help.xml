@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.ActionBar.Transparent"
+    android:weightSum="2"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/image"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Forgot Security Code"
+            android:id="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="8dp"
+            android:typeface="normal" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#2cbd60"
+            android:hint="Email"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#1c7f3e"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/view" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Kodu Gönder"
+            android:id="@+id/get_kod"
+            android:background="@drawable/shadow_buton"
+            android:textSize="14dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#737373" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email adresinize gelen güvenlik kodunu giriniz."
+            android:id="@+id/textView2"
+            android:textColor="#b1b1b1"
+            android:layout_below="@+id/get_kod"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignStart="@+id/view"
+            android:layout_marginTop="-10dp" />
+
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/code"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/textView2"
+            android:textColor="#2cbd60"
+            android:hint="Güvenlik kodu"
+            android:textSize="16sp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#1c7f3e"
+            android:layout_below="@+id/code"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/golge" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Onayla"
+            android:id="@+id/reset_password"
+            android:background="@drawable/flat_buton"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:layout_below="@+id/golge"
+            android:layout_alignLeft="@+id/get_kod"
+            android:layout_alignStart="@+id/get_kod"
+            android:layout_alignRight="@+id/get_kod"
+            android:layout_alignEnd="@+id/get_kod"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

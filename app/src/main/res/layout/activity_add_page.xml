@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".AddPage"
+    android:layout_above="@+id/val_etiket"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/relative">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:id="@+id/frameLayout"
+            android:layout_above="@+id/konum_framelayout"
+            android:layout_marginBottom="3dp">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_back"
+                android:layout_gravity="left|top"
+                android:background="@drawable/x"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/val_baslik"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:singleLine="true"
+                android:layout_gravity="left|center_vertical"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint=" Başlık"
+                android:maxLength="30"
+                android:textSize="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="29.08.2017"
+                android:id="@+id/tarih"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:textColor="#040404"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/btn_oky"
+                android:layout_gravity="right|top"
+                android:background="@drawable/ok"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_share"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/page_share"
+                android:layout_marginRight="31dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_etiket"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/etiket"
+                android:layout_marginRight="62dp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_galery"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/galeri"
+                android:layout_marginRight="96dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="54dp"
+                android:layout_height="52dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/star"
+                android:layout_marginRight="24dp"
+                android:id="@+id/add_page_layout"
+                android:layout_marginBottom="3dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/add_page_resim"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="1dp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:id="@+id/delete_emoji"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/cross"
+                android:layout_marginRight="68dp"
+                android:layout_marginBottom="18dp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/smile"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/smile"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="133dp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/btn_local"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="165dp"
+                android:background="@drawable/location" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|top"
+                android:id="@+id/r_ok"></RelativeLayout>
+
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#808080"
+            android:id="@+id/golge"
+            android:layout_marginTop="108dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:ems="100"
+            android:hint=" Bugün neler yaşadın..."
+            android:textSize="14dp"
+            android:id="@+id/val_icerik"
+            android:autoText="true"
+            android:contextClickable="false"
+            android:editable="true"
+            android:layout_below="@+id/konum_framelayout"
+            android:layout_alignLeft="@+id/konum_framelayout"
+            android:layout_alignStart="@+id/golge"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="8dp" />
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/show_hsv2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:animateLayoutChanges="true"
+            android:visibility="invisible"
+            android:measureAllChildren="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:scrollbars="none"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/val_icerik">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/resimlayout"
+                android:layout_height="82dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/tirtil">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        app:civ_border_color="@color/beyaz"
+                        android:id="@+id/birinci"
+                        android:visibility="invisible"
+                        app:civ_border_width="1dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#b6b5b5"
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ikinci"
+                        app:civ_border_color="@color/beyaz"
+                        app:civ_border_width="1dp"
+                        app:civ_shadow="true"
+                        android:visibility="invisible"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#b6b5b5"
+                        android:layout_marginLeft="90dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        app:civ_border_color="@color/beyaz"
+                        android:id="@+id/ucuncu"
+                        app:civ_border_width="1dp"
+                        app:civ_shadow="true"
+                        android:visibility="invisible"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#b6b5b5"
+                        android:layout_marginLeft="165dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        app:civ_border_color="@color/beyaz"
+                        app:civ_border_width="1dp"
+                        android:id="@+id/dorduncu"
+                        android:visibility="invisible"
+                        app:civ_shadow="true"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#b6b5b5"
+                        android:layout_marginLeft="240dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        app:civ_border_color="@color/beyaz"
+                        android:id="@+id/besinci"
+                        app:civ_border_width="1dp"
+                        app:civ_shadow="true"
+                        android:visibility="invisible"
+                        app:civ_shadow_radius="10"
+                        app:civ_shadow_color="#b6b5b5"
+                        android:layout_marginLeft="313dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp" />
+
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/golge"
+            android:id="@+id/konum_framelayout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:background="@drawable/konum_shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/val_konum"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="16dp"
+                android:textSize="12dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:id="@+id/delete_konum"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/cross"
+                android:layout_marginRight="4dp" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textMultiLine"
+        android:id="@+id/val_etiket"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_radius"
+        android:textColor="#585858"
+        android:hint="#etiket"
+        android:scrollIndicators="bottom"
+
+        android:ems="2"
+        android:textSize="13dp"
+        android:maxLength="46"
+        android:padding="5dp"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:enabled="true"
+        android:autoText="false"
+        android:focusable="false" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#707070"
+        android:id="@+id/view3"
+        android:layout_alignTop="@+id/val_etiket"
+        android:layout_marginTop="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/val_etiket"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/frameLayout2"
+        android:visibility="visible"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/kalin"
+            android:layout_gravity="left|top"
+            android:background="@drawable/tbold"
+            android:layout_marginLeft="16dp" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:id="@+id/sonraki"
+            android:layout_gravity="right|top"
+            android:background="@drawable/redo"
+            android:layout_marginRight="16dp" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:id="@+id/onceki"
+            android:layout_gravity="right|top"
+            android:background="@drawable/undo"
+            android:layout_marginRight="61dp" />
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/italik"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="73dp"
+            android:background="@drawable/italik" />
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/kalem"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginRight="-35dp"
+            android:background="@drawable/text_siyah" />
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:id="@+id/underline"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="-27dp"
+            android:background="@drawable/underline" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="17dp"
+        android:id="@+id/etiket_ok"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ok"
+        android:visibility="invisible" />
+
+    <HorizontalScrollView
+        android:id="@+id/show_hsv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/val_etiket"
+
+        android:scrollbars="none"
+        android:layout_marginBottom="34dp"
+        android:visibility="gone">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/view3"
+        android:background="@drawable/list_shadow"
+        android:id="@+id/renkler"
+        android:visibility="visible"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/kirmizi"
+            android:background="#fe0101"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/sari"
+            android:background="#fff203"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/mavi"
+            android:background="#0116ff"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/yesil"
+            android:background="#069c01"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/pembe"
+            android:background="#fe03e5"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/mor"
+            android:background="#8002fe"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/turuncu"
+            android:background="#fc4001"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/gri"
+            android:background="#868686"
+            android:layout_margin="1dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/siyah"
+            android:background="#030303"
+            android:layout_margin="1dp" />
+
+    </TableRow>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/arka_layout2"
+    android:orientation="vertical"
+    android:background="#020202">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <com.alexvasilkov.gestures.views.GestureImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/view_resim"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Sil"
+            android:id="@+id/delete"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="80dp"
+            android:textColor="#f9f9f9"
+            android:background="#030303" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Güncelle"
+            android:id="@+id/update"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="80dp"
+            android:textColor="#f9f9f9"
+            android:background="#010101" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:background="#dbdbdb"
+            android:id="@+id/golge"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/image_etiket"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="45dp"
+            android:textColor="#fafafa"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/image_baslik"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="65dp"
+            android:textColor="#fafafa"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1 of 5"
+            android:id="@+id/page_number"
+            android:layout_gravity="left|top"
+            android:textColor="#fafafa"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Bugün 17:50"
+            android:id="@+id/image_create_date"
+            android:layout_gravity="right|top"
+            android:textColor="#fafafa"
+            android:textSize="14dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="18dp" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/geri"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+    </FrameLayout>
+
+</LinearLayout>

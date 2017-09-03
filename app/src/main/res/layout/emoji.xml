@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/liner"
+    android:orientation="vertical"
+    android:background="#ffffff">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#ffffff"
+    android:layout_marginTop="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/arka_layout2"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:id="@+id/imageView25"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/x" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bugün Kendini Nasıl Hissediyorsun?"
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+            android:textColor="#0a6f04"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="left|top"
+                android:background="@drawable/gulenyuz" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="50dp"
+                android:id="@+id/vim" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mutlu"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="15dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageView4"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Normal"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="75dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="110dp"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView6"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/asik" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Aşık"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="135dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="172dp"
+                android:id="@+id/imageView7"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView8"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="182dp"
+                android:background="@drawable/kiska" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kıskanç"
+                android:id="@+id/textView7"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="190dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="230dp"
+                android:id="@+id/imageView9"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView10"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/moralsiz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Moralsiz"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="250dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="285dp"
+                android:id="@+id/imageView11"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView12"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="293dp"
+                android:background="@drawable/yorgun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yorgun"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="310dp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView13"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/uzgun" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="343dp"
+                android:id="@+id/imageView14"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Üzgün"
+                android:id="@+id/textView10"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="360dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="390dp"
+                android:id="@+id/imageView15"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/mutlu"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="15dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/normal"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="75dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/asik"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="135dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/kiskanc"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="190dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/moralsiz"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="250dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/yorgun"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="310dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/uzgun"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="360dp"
+                android:textStyle="bold"
+                android:textColor="#175ca6"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:id="@+id/imageView21"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/sinirli" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sinirli"
+                android:id="@+id/sinirliasda"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="420dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/sinirli"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="420dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="450dp"
+                android:id="@+id/imageView22"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView23"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="455dp"
+                android:background="@drawable/begenmis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Neşeli-Havalı"
+                android:id="@+id/textView12"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="475dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/havali"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="475dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software"
+                android:layout_marginTop="505dp"
+                android:id="@+id/imageView16"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView24"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="515dp"
+                android:background="@drawable/eglenmis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Eğlenmiş"
+                android:id="@+id/textView11"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="530dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Seçiniz"
+                android:id="@+id/eglenmis"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="530dp"
+                android:textColor="#175ca6"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
